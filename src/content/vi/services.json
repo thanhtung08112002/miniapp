@@ -1,0 +1,94 @@
+{
+  "pregnancyPackages": {
+    "title": "Gói Thai Sản",
+    "description": "Chăm sóc toàn diện cho mẹ và bé trong suốt thai kỳ",
+    "packages": [
+      {
+        "name": "Gói Thai Sản Cơ Bản",
+        "price": "2.500.000đ",
+        "features": [
+          "Khám thai định kỳ 4 tuần/lần",
+          "Siêu âm 2D thai kỳ",
+          "Xét nghiệm máu cơ bản",
+          "Tư vấn dinh dưỡng thai kỳ",
+          "Tiêm phòng uốn ván"
+        ]
+      },
+      {
+        "name": "Gói Thai Sản Nâng Cao",
+        "price": "4.500.000đ",
+        "features": [
+          "Tất cả các dịch vụ của gói cơ bản",
+          "Siêu âm 4D thai kỳ",
+          "Xét nghiệm sàng lọc trước sinh",
+          "Tư vấn di truyền",
+          "Lớp học tiền sản"
+        ]
+      }
+    ]
+  },
+  "generalHealthCheck": {
+    "title": "Gói Khám Đa Khoa",
+    "description": "Kiểm tra sức khỏe tổng quát toàn diện",
+    "packages": [
+      {
+        "name": "Gói Khám Cơ Bản",
+        "price": "1.200.000đ",
+        "features": [
+          "Khám tổng quát",
+          "Xét nghiệm máu cơ bản",
+          "Xét nghiệm nước tiểu",
+          "Siêu âm bụng tổng quát",
+          "Điện tâm đồ"
+        ]
+      },
+      {
+        "name": "Gói Khám Nâng Cao",
+        "price": "2.500.000đ",
+        "features": [
+          "Tất cả các dịch vụ của gói cơ bản",
+          "Xét nghiệm chức năng gan, thận",
+          "Xét nghiệm mỡ máu",
+          "Xét nghiệm hormone",
+          "Chụp X-quang phổi"
+        ]
+      }
+    ]
+  },
+  "otherServices": {
+    "title": "Dịch Vụ Khác",
+    "description": "Các dịch vụ chăm sóc sức khỏe chuyên biệt",
+    "services": [
+      {
+        "name": "Tiêm Chủng",
+        "description": "Cung cấp đầy đủ các loại vắc xin cho mọi lứa tuổi",
+        "features": [
+          "Vắc xin cho trẻ em",
+          "Vắc xin cho người lớn",
+          "Vắc xin cho phụ nữ mang thai",
+          "Vắc xin du lịch"
+        ]
+      },
+      {
+        "name": "Tư Vấn Dinh Dưỡng",
+        "description": "Tư vấn chế độ dinh dưỡng phù hợp với từng đối tượng",
+        "features": [
+          "Tư vấn dinh dưỡng cho trẻ em",
+          "Tư vấn dinh dưỡng cho người lớn",
+          "Tư vấn dinh dưỡng cho phụ nữ mang thai",
+          "Tư vấn dinh dưỡng cho người bệnh"
+        ]
+      },
+      {
+        "name": "Xét Nghiệm Chuyên Sâu",
+        "description": "Các xét nghiệm chuyên sâu theo yêu cầu",
+        "features": [
+          "Xét nghiệm miễn dịch",
+          "Xét nghiệm hormone",
+          "Xét nghiệm vi sinh",
+          "Xét nghiệm di truyền"
+        ]
+      }
+    ]
+  }
+} 
