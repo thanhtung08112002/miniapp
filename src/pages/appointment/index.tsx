@@ -92,7 +92,7 @@ const AppointmentPage = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       return;
     }
@@ -240,4 +240,4 @@ const AppointmentPage = () => {
   );
 };
 
-export default AppointmentPage; 
+export default AppointmentPage;

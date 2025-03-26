@@ -1,4 +1,5 @@
 import React from 'react';
+import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import ServiceCard from './ServiceCard';
 
@@ -15,16 +16,16 @@ interface ServiceSectionProps {
   viewAllPath: string;
 }
 
-const ServiceSection: React.FC<ServiceSectionProps> = ({ 
-  title, 
+const ServiceSection: React.FC<ServiceSectionProps> = ({
+  title,
   services,
   type,
-  viewAllPath 
+  viewAllPath
 }) => {
   const navigate = useNavigate();
 
   const handleServiceClick = (id: string) => {
-    
+
     navigate(`${viewAllPath}/${id}`);
   };
 
@@ -32,9 +33,23 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
     <div className="py-4">
       <div className="flex justify-between items-center px-4 mb-4">
         <h2 className="text-xl font-bold text-gray-800">{title}</h2>
-        <button 
+        <button
           className="text-green-600 font-medium"
-          onClick={() => navigate(viewAllPath)}
+          onClick={() => {
+            if (type != "service") {
+              return navigate(viewAllPath);
+            } else {
+              toast.error('Đang phát triển, cảm ơn', {
+                duration: 3000,
+                position: 'top-center',
+                style: {
+                  color: '#fff',
+                  borderRadius: '8px',
+                  padding: '12px 24px',
+                },
+              });
+            }
+          }}
         >
           Tất cả
         </button>
@@ -48,7 +63,21 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
               image={service.image}
               title={service.title}
               type={type}
-              onClick={() => handleServiceClick(service.id)}
+              onClick={() => {
+                if (type != "service") {
+                  return handleServiceClick(service.id);
+                } else {
+                  toast.error('Đang phát triển, cảm ơn', {
+                    duration: 3000,
+                    position: 'top-center',
+                    style: {
+                      color: '#fff',
+                      borderRadius: '8px',
+                      padding: '12px 24px',
+                    },
+                  });
+                }
+              }}
             />
           ))}
         </div>
@@ -57,4 +86,4 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
   );
 }
 
-export default ServiceSection; 
+export default ServiceSection;

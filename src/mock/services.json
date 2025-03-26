@@ -1,4 +1,16 @@
 {
+  "categories": [
+    "Gói khám Nhi",
+    "Gói KSK tổng quát",
+    "Gói TSUT sớm",
+    "Gói KSK và TSUT",
+    "Gói khám tiêu hóa",
+    "Gói khám nội khoa",
+    "Gói tiền hôn nhân",
+    "Gói khám Nam học",
+    "Gói khám phụ sản",
+    "Khám Tai"
+  ],
   "medicalPackages": [
     {
       "id": "1",
@@ -103,4 +115,4 @@
       "image": "/static/images/mau.jpg"
     }
   ]
-} 
+}

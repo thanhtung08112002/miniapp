@@ -33,6 +33,7 @@ const NAV_ITEMS = [
 ];
 
 export default function Footer() {
+
   return (
     <>
       <HorizontalDivider />

@@ -60,7 +60,7 @@ const DiseaseSearchPage = () => {
       return
     }
 
-    const filtered = diseases.filter(disease => 
+    const filtered = diseases.filter(disease =>
       disease.name.toLowerCase().includes(query) ||
       disease.description.toLowerCase().includes(query) ||
       disease.symptoms.some(symptom => symptom.toLowerCase().includes(query))
@@ -70,10 +70,6 @@ const DiseaseSearchPage = () => {
 
   return (
     <div className='disease-search-page'>
-      <div className='header'>
-        <h1 className='title'>Tra cứu bệnh</h1>
-      </div>
-
       <div className='search-section'>
         <input
           className='search-input'
@@ -112,4 +108,4 @@ const DiseaseSearchPage = () => {
   )
 }
 
-export default DiseaseSearchPage 
+export default DiseaseSearchPage

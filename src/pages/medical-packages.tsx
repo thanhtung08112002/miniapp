@@ -10,4 +10,4 @@ const MedicalPackagesPage: React.FC = () => {
   );
 };
 
-export default MedicalPackagesPage; 
+export default MedicalPackagesPage;
