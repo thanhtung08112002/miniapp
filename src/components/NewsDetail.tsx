@@ -47,7 +47,7 @@ const NewsDetail: React.FC<NewsDetailProps> = ({
         {/* DJ Banner */}
         <div className="bg-gradient-to-r from-[#FFE5D9] to-[#FFF3ED] p-4 relative">
           <img 
-            src="/static/images/DJ-logo.png" 
+            src="/static/images/logo.jpg" 
             alt="DJ Logo" 
             className="h-6 mb-3"
           />
@@ -78,7 +78,7 @@ const NewsDetail: React.FC<NewsDetailProps> = ({
                 <div className="text-red-600 font-bold mb-1">THẺ BẢO HIỂM Y TẾ</div>
                 <div className="text-sm text-gray-600">Mã số: 0801503677</div>
               </div>
-              <img src="/static/images/bhyt-logo.png" alt="BHYT Logo" className="h-8" />
+              <img src="/static/images/bhyt.jpg" alt="BHYT Logo" className="h-8" />
             </div>
             <div className="mt-4 space-y-1 text-sm text-gray-700">
               <div>Họ và tên: HOÀNG VĂN A</div>
@@ -88,7 +88,7 @@ const NewsDetail: React.FC<NewsDetailProps> = ({
               <div>Nơi cấp: BHXH Quận Hoàn Kiếm, Hà Nội</div>
             </div>
             <img 
-              src="/static/images/qr-code.png" 
+              src="/static/images/qrcode.png" 
               alt="QR Code" 
               className="w-24 h-24 mt-4"
             />

@@ -32,6 +32,7 @@ const router = createBrowserRouter(
           element: <MedicalPackagesPage />,
           handle: {
             title: "Gói khám",
+            backUrl: "/"
           },
         },
         {
@@ -39,6 +40,7 @@ const router = createBrowserRouter(
           element: <MedicalPackageDetail />,
           handle: {
             title: "Chi tiết gói khám",
+            backUrl: "/medical-packages"
           },
         },
         {
@@ -46,6 +48,7 @@ const router = createBrowserRouter(
           element: <AppointmentPage />,
           handle: {
             title: "Đặt lịch khám",
+            backUrl: "/"
           },
         },
         {
@@ -53,6 +56,7 @@ const router = createBrowserRouter(
           element: <AppointmentSuccessPage />,
           handle: {
             title: "Đặt lịch thành công",
+            backUrl: "/appointment"
           },
         },
         {
@@ -68,6 +72,7 @@ const router = createBrowserRouter(
           handle: {
             title: ({ doctors, params }) =>
               doctors.find((d) => d.id === Number(params.id))?.name,
+            backUrl: "/doctors"
           },
         },
         {
@@ -75,6 +80,7 @@ const router = createBrowserRouter(
           element: <ProfilePage />,
           handle: {
             logo: true,
+            backUrl: "/"
           },
         },
         {
@@ -82,6 +88,7 @@ const router = createBrowserRouter(
           element: <MedicalHistoryPage />,
           handle: {
             title: "Lịch sử khám bệnh",
+            backUrl: "/"
           },
         },
         {
@@ -89,6 +96,7 @@ const router = createBrowserRouter(
           element: <DiseaseSearchPage />,
           handle: {
             title: "Tra cứu bệnh",
+            backUrl: "/"
           },
         },
         {
@@ -96,6 +104,7 @@ const router = createBrowserRouter(
           element: <NewsPage />,
           handle: {
             title: "Tin tức y tế",
+            backUrl: "/"
           },
         },
         {
@@ -103,6 +112,7 @@ const router = createBrowserRouter(
           element: <NewsDetailPage />,
           handle: {
             title: "Chi tiết tin tức",
+            backUrl: "/news"
           },
         },
       ],

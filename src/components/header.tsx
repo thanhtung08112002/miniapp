@@ -17,6 +17,14 @@ export default function Header() {
   const location = useLocation();
   const [handle, match] = useRouteHandle();
 
+  const handleBack = () => {
+    if (handle?.backUrl) {
+      navigate(handle.backUrl);
+    } else {
+      navigate(-1);
+    }
+  };
+
   const title = useMemo(() => {
     if (handle) {
       if (typeof handle.title === "function") {
@@ -44,7 +52,7 @@ export default function Header() {
   return (
     <div className="h-12 w-full flex items-center pl-2 pr-[106px] py-2 space-x-1">
       {showBack && (
-        <div className="p-2 cursor-pointer" onClick={() => navigate(-1)}>
+        <div className="p-2 cursor-pointer" onClick={() => handleBack()}>
           <BackIcon />
         </div>
       )}
