@@ -1,0 +1,4 @@
+Please add the following images to this directory:
+- ent-package.jpg (for ENT package)
+- women-checkup.jpg (for women's health checkup)
+- screening.jpg (for screening package) 

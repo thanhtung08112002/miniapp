@@ -7,13 +7,13 @@ const NewsDetail = () => {
 
   // Mock data - thay thế bằng API call thực tế sau này
   const newsData = {
-    title: 'Thông báo chính sách bảo hiểm y tế từ năm 2025 tại TCI',
+    title: 'Thông báo chính sách bảo hiểm y tế từ năm 2025 tại DJ',
     date: '10:19, 15/03',
     views: 25,
     content: [
       {
         type: 'text',
-        value: 'Trong những năm qua, Hệ thống Y tế Thu Cúc TCI luôn có uy tín cao trong khối y tế tư nhân. Không chỉ được đánh giá về chất lượng dịch vụ khám chữa bệnh, chăm sóc sức khỏe, thai sản vượt trội mà Thu Cúc TCI còn được khách hàng tin yêu bởi việc thực hiện các chính sách bảo hiểm y tế và bảo hiểm bảo lãnh đúng quy định, thủ tục giải quyết nhanh chóng, đảm bảo tối ưu quyền lợi khách hàng, bệnh nhân.'
+        value: 'Trong những năm qua, Hệ thống Y tế DevJob DJ luôn có uy tín cao trong khối y tế tư nhân. Không chỉ được đánh giá về chất lượng dịch vụ khám chữa bệnh, chăm sóc sức khỏe, thai sản vượt trội mà DevJob DJ còn được khách hàng tin yêu bởi việc thực hiện các chính sách bảo hiểm y tế và bảo hiểm bảo lãnh đúng quy định, thủ tục giải quyết nhanh chóng, đảm bảo tối ưu quyền lợi khách hàng, bệnh nhân.'
       },
       {
         type: 'text',
@@ -22,11 +22,11 @@ const NewsDetail = () => {
       {
         type: 'image',
         url: '/static/images/mau.jpg',
-        caption: 'TẤT CẢ NGƯỜI THAM GIA BẢO HIỂM Y TẾ KHI ĐI KHÁM TẠI PHÒNG KHÁM TCI ĐƯỢC HƯỞNG 100% QUYỀN LỢI THẺ'
+        caption: 'TẤT CẢ NGƯỜI THAM GIA BẢO HIỂM Y TẾ KHI ĐI KHÁM TẠI PHÒNG KHÁM DJ ĐƯỢC HƯỞNG 100% QUYỀN LỢI THẺ'
       },
       {
         type: 'text',
-        value: 'Theo đó, tại Hệ thống Y tế Thu Cúc TCI triển khai theo đúng quy định của Luật BHYT như sau:'
+        value: 'Theo đó, tại Hệ thống Y tế DevJob DJ triển khai theo đúng quy định của Luật BHYT như sau:'
       }
     ],
     shareImage: '/static/images/mau.jpg'

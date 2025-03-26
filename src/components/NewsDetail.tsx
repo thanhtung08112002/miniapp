@@ -44,18 +44,18 @@ const NewsDetail: React.FC<NewsDetailProps> = ({
       </div>
 
       <div className="pt-4">
-        {/* TCI Banner */}
+        {/* DJ Banner */}
         <div className="bg-gradient-to-r from-[#FFE5D9] to-[#FFF3ED] p-4 relative">
           <img 
-            src="/static/images/tci-logo.png" 
-            alt="TCI Logo" 
+            src="/static/images/DJ-logo.png" 
+            alt="DJ Logo" 
             className="h-6 mb-3"
           />
           <div className="text-red-600 font-bold text-lg leading-tight mb-1">
             TẤT CẢ NGƯỜI THAM GIA BẢO HIỂM Y TẾ
           </div>
           <div className="text-red-600 font-bold text-lg leading-tight">
-            KHI ĐI KHÁM TẠI PHÒNG KHÁM TCI
+            KHI ĐI KHÁM TẠI PHÒNG KHÁM DJ
           </div>
           <div className="flex items-center gap-1 mt-2 text-gray-600">
             <img src="/static/icons/location.svg" alt="Location" className="w-4 h-4" />

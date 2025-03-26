@@ -1,0 +1,67 @@
+{
+  "categories": [
+    "Gói khám Nhi",
+    "Gói KSK tổng quát",
+    "Gói TSUT sớm",
+    "Gói KSK và TSUT",
+    "Gói khám tiêu hóa",
+    "Gói khám nội khoa",
+    "Gói tiền hôn nhân",
+    "Gói khám Nam học",
+    "Gói khám phụ sản",
+    "Khám Tai"
+  ],
+  "packages": [
+    {
+      "id": "ent",
+      "title": "Chi tiết về gói khám Tai Mũi Họng nâng cao",
+      "image": "/static/images/mau.jpg",
+      "link": "/medical-package/ent",
+      "category": "Khám Tai",
+      "description": "Gói khám chuyên sâu về Tai Mũi Họng với các xét nghiệm và chẩn đoán toàn diện",
+      "price": "2.500.000đ",
+      "duration": "2-3 giờ",
+      "features": [
+        "Khám lâm sàng Tai Mũi Họng",
+        "Nội soi Tai Mũi Họng",
+        "Xét nghiệm máu cơ bản",
+        "Chụp X-quang",
+        "Tư vấn kết quả"
+      ]
+    },
+    {
+      "id": "women",
+      "title": "Gói khám - nữ - khám phát hiện sớm",
+      "image": "/static/images/mau.jpg",
+      "link": "/medical-package/women",
+      "category": "Gói khám phụ sản",
+      "description": "Gói khám chuyên biệt dành cho nữ giới, tập trung vào sàng lọc và phát hiện sớm các bệnh lý",
+      "price": "3.500.000đ",
+      "duration": "3-4 giờ",
+      "features": [
+        "Khám phụ khoa",
+        "Xét nghiệm nội tiết",
+        "Siêu âm vú",
+        "Xét nghiệm tế bào cổ tử cung",
+        "Tư vấn dinh dưỡng"
+      ]
+    },
+    {
+      "id": "screening",
+      "title": "Gói khám - Tầm soát sàng lọc thin",
+      "image": "/static/images/mau.jpg",
+      "link": "/medical-package/screening",
+      "category": "Gói TSUT sớm",
+      "description": "Gói khám tầm soát toàn diện, phát hiện sớm các bệnh lý nguy hiểm",
+      "price": "5.000.000đ",
+      "duration": "4-5 giờ",
+      "features": [
+        "Khám tổng quát",
+        "Xét nghiệm máu toàn diện",
+        "Chụp CT toàn thân",
+        "Siêu âm các cơ quan",
+        "Tư vấn kết quả"
+      ]
+    }
+  ]
+} 

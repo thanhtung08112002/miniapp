@@ -11,7 +11,7 @@ interface Service {
 interface ServiceSectionProps {
   title: string;
   services: Service[];
-  type: 'medical' | 'service';
+  type: 'medical-packages' | 'service';
   viewAllPath: string;
 }
 
@@ -22,6 +22,11 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
   viewAllPath 
 }) => {
   const navigate = useNavigate();
+
+  const handleServiceClick = (id: string) => {
+    
+    navigate(`${viewAllPath}/${id}`);
+  };
 
   return (
     <div className="py-4">
@@ -43,6 +48,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
               image={service.image}
               title={service.title}
               type={type}
+              onClick={() => handleServiceClick(service.id)}
             />
           ))}
         </div>

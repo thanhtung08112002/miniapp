@@ -4,7 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import MenuItem from '../../components/MenuItem';
 import ServiceSection from '../../components/ServiceSection';
-import { medicalPackages, otherServices } from '../../data/services';
+import { medicalPackages, otherServices } from '@/data/services';
+import toast from 'react-hot-toast';
 // import ServiceScroll from "@/components/ui/service-scroll";
 
 const Page = ({ children, className }: { children: React.ReactNode; className?: string }) => (
@@ -13,6 +14,19 @@ const Page = ({ children, className }: { children: React.ReactNode; className?: 
 
 const HomePage = () => {
   const navigate = useNavigate();
+
+  const handleFollowOA = () => {
+    toast.success('Cảm ơn bạn đã quan tâm', {
+      duration: 3000,
+      position: 'top-center',
+      style: {
+        background: '#00a651',
+        color: '#fff',
+        borderRadius: '8px',
+        padding: '12px 24px',
+      },
+    });
+  };
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -32,17 +46,17 @@ const HomePage = () => {
           <MenuItem 
             icon="/static/icons/gift.svg" 
             label="Ưu đãi"
-            onClick={() => navigate('/promotions')}
+            onClick={() => navigate('#')}
           />
           <MenuItem 
             icon="/static/icons/health.svg" 
             label="Sổ tay sức khỏe"
-            onClick={() => navigate('/health-book')}
+            onClick={() => navigate('#')}
           />
           <MenuItem 
             icon="/static/icons/history.svg" 
             label="Lịch sử"
-            onClick={() => navigate('/history')}
+            onClick={() => navigate('#')}
           />
         </div>
       </div>
@@ -64,7 +78,11 @@ const HomePage = () => {
           <div className="flex-1">
             <div className="font-medium">TCI Hospital - Hệ thống y tế Thu Cúc</div>
           </div>
-          <Button variant="default" className="px-4 text-white bg-[#00a651] rounded-full">
+          <Button 
+            variant="default" 
+            className="px-4 text-white bg-[#00a651] rounded-full"
+            onClick={handleFollowOA}
+          >
             Quan tâm
           </Button>
         </div>
@@ -73,7 +91,7 @@ const HomePage = () => {
       <ServiceSection
         title="Gói Khám Đa Khoa"
         services={medicalPackages}
-        type="medical"
+        type="medical-packages"
         viewAllPath="/medical-packages"
       />
 
@@ -84,7 +102,6 @@ const HomePage = () => {
         viewAllPath="/other-services"
       />
 
-    
 
       {/* News Section */}
         <div className="p-4">
@@ -101,7 +118,7 @@ const HomePage = () => {
               <CardContent className="p-0">
                 <img src="/static/images/mau.jpg" alt="News 1" className="w-full h-[120px] object-cover rounded-t-lg" />
                 <div className="p-3">
-                  <h3 className="font-medium line-clamp-2">Thông báo chính sách bảo hiểm y tế từ năm 2025 tại TCI</h3>
+                  <h3 className="font-medium line-clamp-2">Thông báo chính sách bảo hiểm y tế từ năm 2025 tại DJ</h3>
                   <div className="flex items-center text-xs text-gray-500 mt-2 space-x-2">
                     <span>10:19, 15/03</span>
                     <span>mắt 25</span>
@@ -113,7 +130,7 @@ const HomePage = () => {
               <CardContent className="p-0">
                 <img src="/static/images/mau.jpg" alt="News 2" className="w-full h-[120px] object-cover rounded-t-lg" />
                 <div className="p-3">
-                  <h3 className="font-medium line-clamp-2">TCI tri ân - Tặng tổng 200 tỷ đồng cho khách hàng khám chữa bệnh</h3>
+                  <h3 className="font-medium line-clamp-2">DJ tri ân - Tặng tổng 200 tỷ đồng cho khách hàng khám chữa bệnh</h3>
                   <div className="flex items-center text-xs text-gray-500 mt-2 space-x-2">
                     <span>15:35, 20/02</span>
                     <span>mắt 39</span>

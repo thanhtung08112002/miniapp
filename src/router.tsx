@@ -1,6 +1,7 @@
 import Layout from "@/components/layout";
 import HomePage from "@/pages/home";
 import AppointmentPage from "@/pages/appointment";
+import AppointmentSuccessPage from "@/pages/appointment/success";
 import DoctorListPage from "@/pages/doctors";
 import DoctorDetailPage from "@/pages/doctors/detail";
 import ProfilePage from "@/pages/profile";
@@ -8,6 +9,8 @@ import MedicalHistoryPage from "@/pages/medical-history";
 import DiseaseSearchPage from "@/pages/disease-search";
 import NewsPage from "@/pages/news";
 import NewsDetailPage from "@/pages/news/[id]";
+import MedicalPackagesPage from "@/pages/medical-packages";
+import MedicalPackageDetail from "@/pages/medical-package-detail";
 import { createBrowserRouter } from "react-router-dom";
 import { getBasePath } from "@/utils/zma";
 
@@ -25,10 +28,31 @@ const router = createBrowserRouter(
           },
         },
         {
+          path: "/medical-packages",
+          element: <MedicalPackagesPage />,
+          handle: {
+            title: "Gói khám",
+          },
+        },
+        {
+          path: "/medical-packages/:id",
+          element: <MedicalPackageDetail />,
+          handle: {
+            title: "Chi tiết gói khám",
+          },
+        },
+        {
           path: "/appointment",
           element: <AppointmentPage />,
           handle: {
             title: "Đặt lịch khám",
+          },
+        },
+        {
+          path: "/appointment/success",
+          element: <AppointmentSuccessPage />,
+          handle: {
+            title: "Đặt lịch thành công",
           },
         },
         {

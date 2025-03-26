@@ -10,27 +10,27 @@ const NewsPage = () => {
   const newsList = [
     {
       id: 1,
-      title: 'Thông báo chính sách bảo hiểm y tế từ năm 2025 tại TCI',
+      title: 'Thông báo chính sách bảo hiểm y tế từ năm 2025 tại DJ',
       image: '/static/images/mau.jpg',
       date: '10:19, 15/03',
       views: 25,
-      summary: 'Trong những năm qua, Hệ thống Y tế Thu Cúc TCI luôn có uy tín cao trong khối y tế tư nhân...'
+      summary: 'Trong những năm qua, Hệ thống Y tế DevJob DJ luôn có uy tín cao trong khối y tế tư nhân...'
     },
     {
       id: 2,
-      title: 'TCI tri ân - Tặng tổng 200 tỷ đồng cho khách hàng khám chữa bệnh',
+      title: 'DJ tri ân - Tặng tổng 200 tỷ đồng cho khách hàng khám chữa bệnh',
       image: '/static/images/mau.jpg',
       date: '15:35, 20/02',
       views: 39,
-      summary: 'Nhân dịp kỷ niệm 15 năm thành lập, TCI triển khai chương trình tri ân khách hàng...'
+      summary: 'Nhân dịp kỷ niệm 15 năm thành lập, DJ triển khai chương trình tri ân khách hàng...'
     },
     {
       id: 3,
-      title: 'Bùng nổ ưu đãi tại Thu Cúc TCI 216 Trần Duy Hưng',
+      title: 'Bùng nổ ưu đãi tại DevJob DJ 216 Trần Duy Hưng',
       image: '/static/images/mau.jpg',
       date: '15:13, 05/02',
       views: 22,
-      summary: 'Cơ sở mới của TCI tại 216 Trần Duy Hưng triển khai nhiều chương trình ưu đãi hấp dẫn...'
+      summary: 'Cơ sở mới của DJ tại 216 Trần Duy Hưng triển khai nhiều chương trình ưu đãi hấp dẫn...'
     }
   ];
 

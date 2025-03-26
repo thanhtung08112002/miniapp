@@ -1,24 +1,18 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 interface ServiceCardProps {
   id: string;
   image: string;
   title: string;
-  type: 'medical' | 'service';
+  type: 'medical-package' | 'service';
+  onClick: () => void;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ id, image, title, type }) => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate(`/${type}/${id}`);
-  };
-
+const ServiceCard: React.FC<ServiceCardProps> = ({ id, image, title, type, onClick }) => {
   return (
     <div 
       className="flex flex-col bg-white rounded-lg shadow-md w-64 min-w-[256px] cursor-pointer hover:shadow-lg transition-shadow"
-      onClick={handleClick}
+      onClick={onClick}
     >
       <img 
         src={image} 

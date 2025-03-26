@@ -23,51 +23,87 @@
       border: 1px solid #ddd;
       border-radius: 8px;
       font-size: 16px;
-      background: #fff;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+      &:focus {
+        outline: none;
+        border-color: #00a651;
+        box-shadow: 0 0 0 2px rgba(0, 166, 81, 0.1);
+      }
     }
   }
 
   .results-section {
     .disease-card {
-      background: #fff;
-      padding: 16px;
-      border-radius: 8px;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
       margin-bottom: 16px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 
       .disease-name {
-        font-size: 18px;
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 8px;
-        display: block;
+        color: #00a651;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
       }
 
       .disease-description {
-        font-size: 14px;
         color: #666;
-        margin-bottom: 12px;
-        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 16px;
       }
 
-      .symptoms-section {
-        .symptoms-title {
-          font-size: 14px;
-          font-weight: bold;
+      .disease-symptoms, .disease-treatment {
+        margin-top: 16px;
+
+        h4 {
           color: #333;
+          font-size: 16px;
+          font-weight: 500;
           margin-bottom: 8px;
-          display: block;
         }
 
-        .symptoms-list {
-          .symptom-item {
-            font-size: 14px;
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
             color: #666;
+            font-size: 14px;
             margin-bottom: 4px;
-            display: block;
+            padding-left: 20px;
+            position: relative;
+
+            &:before {
+              content: "•";
+              color: #00a651;
+              position: absolute;
+              left: 0;
+            }
           }
         }
+
+        p {
+          color: #666;
+          font-size: 14px;
+          line-height: 1.5;
+          margin: 0;
+        }
       }
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 40px 20px;
+      background: white;
+      border-radius: 12px;
+      color: #666;
+      font-size: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
   }
 } 
